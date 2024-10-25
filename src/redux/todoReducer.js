@@ -43,7 +43,7 @@ const todosSlice = createSlice({
         .addCase(fetchTodos.fulfilled, (state, action) => {
             state.status = 'success';
 
-            // state.todos = action.payload;
+            state.todos = action.payload;
         })
         .addCase(fetchTodos.rejected, (state) => {
             state.status = 'failed';
